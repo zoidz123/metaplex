@@ -11,12 +11,26 @@ The server currently requires at least 8GB of RAM.
 
 ```
 yarn build
-
 yarn start
-
 ```
+
 it will start GraphQL at `http://localhost:4000/`
 
+## Run with mongo
+
+```
+yarn build
+yarn start:mongo:ingester
+```
+
+it will start ingester which will start to receive data from the blockchain and put it into MongoDB
+
+```
+yarn build
+yarn start:mongo:server
+```
+
+it will start GraphQL at `http://localhost:4000/` which will read data from MongoDB
 
 ## Roadmap
 
